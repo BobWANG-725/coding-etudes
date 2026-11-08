@@ -1,0 +1,25 @@
+# ===== Java / IntelliJ =====
+.idea/
+*.iml
+out/
+*.class
+
+# ===== Python =====
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# ===== C =====
+*.exe
+*.o
+*.obj
+
+# ===== 系统 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== 编辑器 / 临时 =====
+.vscode/
+*.log
