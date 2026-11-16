@@ -20,6 +20,9 @@ __pycache__/
 Thumbs.db
 desktop.ini
 
+# ===== 编译器产物 =====
+*.exe
+*.stackdump
+
 # ===== 编辑器 / 临时 =====
-.vscode/
 *.log
