@@ -1,3 +1,4 @@
+/* 张书云《C语言程序设计（第2版）》p. 89 题目3. (4) ② */
 #include <stdio.h>
 int main(void)
 {
