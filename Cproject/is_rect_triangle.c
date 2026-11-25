@@ -1,5 +1,6 @@
-/*张书云《C语言程序设计（第2版）》p. 89 题目3. (2)*/
+/* 张书云《C语言程序设计（第2版）》p. 89 题目3. (2) */
 #include <stdio.h>
+#define EPS 1e-7
 int main(void)
 {
     double a, b, c;
@@ -7,7 +8,9 @@ int main(void)
     printf("输入三角形的三边长：\n");
     scanf("%lf%lf%lf", &a, &b, &c);
 
-    if (a * a + b * b == c * c || a * a + c * c == b * b || b * b + c * c == a * a)
+    if (fabs(a * a + b * b - c * c) < EPS
+        || fabs(a * a + c * c - b * b) < EPS
+        || fabs(b * b + c * c - a * a) < EPS)
         {
             printf("该三角形是直角三角形\n");
         }
